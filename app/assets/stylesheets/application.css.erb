@@ -1,0 +1,47 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+body {
+  font-family: georgia, serif;
+  text-shadow: 0px 1px rgba(0,0,0,0.3);
+  color: #333;
+  background: #a8cfca url(<%= asset_path 'background.png' %>) repeat top left;
+}
+.title {
+  background: url(<%= asset_path 'ribbon.png' %>) left top no-repeat;
+	padding: 0;
+	margin-left: -28px;
+	height: 80px;
+}
+.nowrap {
+	white-space: nowrap;
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+/* must be combined with nobr in html for ie5win */
+}
+.tiny {
+	font-size: 9px;
+	line-height: 16px;
+	margin-top: 15px;
+	margin-bottom: 5px; 
+}
+#wrapper {
+  background: url(<%= asset_path "poppy.png" %>) top left no-repeat;
+}
+#main-heading {
+  background: url(<%= asset_path "daisy-sm.png" %>) bottom right no-repeat;
+	height: 199px;
+}
