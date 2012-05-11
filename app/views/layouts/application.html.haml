@@ -1,0 +1,38 @@
+!!!DOCTYPE 5
+%html
+  %head
+    %title The Wedding of Ashley Hill &amp; Chris Neitzer
+    =stylesheet_link_tag    "application", :media => "all"
+    =stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise", media: "all"
+    =javascript_include_tag "application"
+    =csrf_meta_tags
+  %body
+    .container
+      .row
+        .offset2.span8
+          %nav.pull-right
+            %ul.nav-pills.nav
+              %li
+                =link_to "Home", home_index_path
+              %li
+                =link_to "Location", location_index_path
+              %li
+                =link_to "Hotel Info", hotel_info_index_path
+              %li
+                =link_to "Registry", registry_index_path
+              %li
+                =link_to "At Home", at_home_index_path
+          %div{style: "clear: right;"}
+          %header#main-heading
+            %div
+              %h1
+                Ashley Hill
+                %br
+                &amp;
+                %br
+                Chris Neitzer
+                %br
+                are getting married!
+          #content
+            .box
+              =yield

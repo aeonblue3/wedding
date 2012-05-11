@@ -1,0 +1,14 @@
+%div{style: "display:block;width: 100%;text-align: center;"}
+  =image_tag "date2.png"
+#imgContainer.pull-right
+  =image_tag "us.jpg", size: "165x165"
+.title
+  %h2 Email Updates
+#mc_embed_signup
+  %form{action: "http://hill-neitzer.us5.list-manage1.com/subscribe/post?u=c31a97bdeaf90f98eae0e26b7&amp;id=145072f711", "method" => "post", "id" => "mc-embedded-subscribe-form", "name" => "mc-embedded-subscribe-form", class: "validate", "target" => "_blank"}
+    %label{for: "mce-EMAIL"}
+      %p
+        Subscribe to our mailing list
+    %input{type: "email", value: "", name: "EMAIL", class: "email", id: "mce-EMAIL", placeholder: "email address"}
+    .clear
+      %input.button{type: "submit", value: "Subscribe", name: "subscribe", id: "mc-embedded-subscribe"}
