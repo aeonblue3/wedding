@@ -1,4 +1,14 @@
 Wedding::Application.routes.draw do
+  get "wedding/index"
+
+  get "at_home/index"
+
+  get "registry/index"
+
+  get "hotel_info/index"
+
+  get "location/index"
+
   get "home/index"
 
   # The priority is based upon order of creation:
