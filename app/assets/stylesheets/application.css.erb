@@ -38,10 +38,44 @@ body {
 	margin-top: 15px;
 	margin-bottom: 5px; 
 }
-#wrapper {
+#main-heading div {
+  width: 100%;
   background: url(<%= asset_path "poppy.png" %>) top left no-repeat;
+	height: 199px;
 }
 #main-heading {
   background: url(<%= asset_path "daisy-sm.png" %>) bottom right no-repeat;
-	height: 199px;
 }
+
+.box {
+	border: 1px solid #ccc;
+	width: 100%;
+	background: #fffae7;
+	padding: 5px;
+	margin: 0px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+#content {
+	padding: 0px 10px 10px 10px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto; 	/* opera does not like 'margin:20px auto' */
+	background: transparent;
+	text-align:left; /* part 2 of 2 centering hack */
+	width: 100%; /* ie5win fudge begins */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 100%;
+	border: 0px solid #555;
+}
+h1 {
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: 'Waiting for the Sunrise', arial, serif;
+	text-align: center;
+	}
