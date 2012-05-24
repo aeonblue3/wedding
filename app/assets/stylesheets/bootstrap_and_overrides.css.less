@@ -16,8 +16,15 @@
 // Example:
 // @linkColor: #ff0000;
 .nav {font-weight: bold; font-size: 120%;}
-.nav li a {-moz-transition: background .2s ease-in-out;  color: #0074E8;}
-.nav li a:hover {background: #555; color: #efefef;}
+.nav li a {
+	transition: background .2s ease-in-out;
+	-o-transition: background .2s ease-in-out;
+	-webkit-transition: background .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out;
+	color: #2f93b0;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+.nav li a:hover {background: #555; color: #efefef; text-shadow: none;}
 
 h1 {
 	font-size: 32px;
@@ -48,7 +55,10 @@ h2 {
 	-webkit-box-shadow: 0px 1px 1px #ccc;
 	-moz-box-shadow: 0px 1px 1px #ccc;
 	box-shadow: 0px 1px 1px #ccc;
+	transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
 }
 
 #imgContainer img:hover {
